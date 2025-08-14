@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import { useState, useEffect, createContext } from 'react';
 import Navbar from './components/Navbar';
 import MoviesList from './pages/MoviesList';
@@ -102,73 +102,71 @@ function App() {
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
-      <BrowserRouter>
-        <div className={`App ${theme}`}>
-          <Navbar 
-            watchlistCount={watchlist.length} 
-            activeTab={activeTab}
-            setActiveTab={setActiveTab}
-          />
-          <main className="main-content">
-            <Routes>
-              <Route 
-                path="/" 
-                element={
-                  <MoviesList 
-                    addToWatchlist={addToWatchlist}
-                    isInWatchlist={isInWatchlist}
-                  />
-                } 
-              />
-              <Route 
-                path="/movie/:id" 
-                element={
-                  <MovieDetails 
-                    addToWatchlist={addToWatchlist}
-                    isInWatchlist={isInWatchlist}
-                  />
-                } 
-              />
-              <Route 
-                path="/watchlist" 
-                element={
-                  <Watchlist 
-                    watchlist={watchlist}
-                    removeFromWatchlist={removeFromWatchlist}
-                  />
-                } 
-              />
-              <Route 
-                path="/search" 
-                element={
-                  <SearchResults 
-                    addToWatchlist={addToWatchlist}
-                    isInWatchlist={isInWatchlist}
-                  />
-                } 
-              />
-              <Route 
-                path="/tv" 
-                element={
-                  <TVShows 
-                    addToWatchlist={addToWatchlist}
-                    isInWatchlist={isInWatchlist}
-                  />
-                } 
-              />
-              <Route 
-                path="/tv/:id" 
-                element={
-                  <TVShowDetails 
-                    addToWatchlist={addToWatchlist}
-                    isInWatchlist={isInWatchlist}
-                  />
-                } 
-              />
-            </Routes>
-          </main>
-        </div>
-      </BrowserRouter>
+      <div className={`App ${theme}`}>
+        <Navbar 
+          watchlistCount={watchlist.length} 
+          activeTab={activeTab}
+          setActiveTab={setActiveTab}
+        />
+        <main className="main-content">
+          <Routes>
+            <Route 
+              path="/" 
+              element={
+                <MoviesList 
+                  addToWatchlist={addToWatchlist}
+                  isInWatchlist={isInWatchlist}
+                />
+              } 
+            />
+            <Route 
+              path="/movie/:id" 
+              element={
+                <MovieDetails 
+                  addToWatchlist={addToWatchlist}
+                  isInWatchlist={isInWatchlist}
+                />
+              } 
+            />
+            <Route 
+              path="/watchlist" 
+              element={
+                <Watchlist 
+                  watchlist={watchlist}
+                  removeFromWatchlist={removeFromWatchlist}
+                />
+              } 
+            />
+            <Route 
+              path="/search" 
+              element={
+                <SearchResults 
+                  addToWatchlist={addToWatchlist}
+                  isInWatchlist={isInWatchlist}
+                />
+              } 
+            />
+            <Route 
+              path="/tv" 
+              element={
+                <TVShows 
+                  addToWatchlist={addToWatchlist}
+                  isInWatchlist={isInWatchlist}
+                />
+              } 
+            />
+            <Route 
+              path="/tv/:id" 
+              element={
+                <TVShowDetails 
+                  addToWatchlist={addToWatchlist}
+                  isInWatchlist={isInWatchlist}
+                />
+              } 
+            />
+          </Routes>
+        </main>
+      </div>
     </ThemeContext.Provider>
   );
 }
