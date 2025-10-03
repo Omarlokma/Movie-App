@@ -4,5 +4,9 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: '/Movie-App/'
+  base: process.env.NODE_ENV === 'production' ? '/Movie-App/' : '/',
+  build: {
+    outDir: 'dist',
+    assetsDir: 'assets'
+  }
 })
