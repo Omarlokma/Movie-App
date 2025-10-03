@@ -33,5 +33,6 @@ A modern, responsive React-based movie application that allows users to browse m
 | **CSS3** | Latest | Styling with modern features |
 
 
-## 🚀
+## 🚀Live Demo
+[Try Now](https://omarlokma.github.io/Movie-App/#/)
 ```
