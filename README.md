@@ -1,12 +1,11 @@
 # 🎬 Movie App
 
 A modern, responsive React-based movie application that allows users to browse movies and TV shows, view details, search, and manage a personalized wishlist. Built with React 19, Vite, and TMDB API.
-## ✨ Features
 
 ## 🚀Live Demo
 [Try Now](https://omarlokma.github.io/Movie-App/#/)
 ```
-
+## ✨ Features
 ### 🎯 Core Features
 - **📽️ Movies List Page** - Browse now playing movies with pagination
 - **🎭 Movie Details** - View detailed information, reviews, and recommendations
