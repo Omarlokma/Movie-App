@@ -39,7 +39,6 @@
   --heart-empty: #6c757d;
 }
 
-/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
@@ -62,7 +61,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Navbar styles */
 .navbar {
   background: var(--bg-navbar);
   padding: 1rem 0;
@@ -224,7 +222,6 @@ body {
   font-weight: bold;
 }
 
-/* Main content */
 .main-content {
   flex: 1;
   max-width: 1200px;
@@ -235,7 +232,6 @@ body {
   transition: background-color 0.3s ease;
 }
 
-/* Page headers */
 .page-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -255,7 +251,6 @@ body {
   font-size: 1.1rem;
 }
 
-/* Movies grid */
 .movies-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -263,7 +258,6 @@ body {
   margin-bottom: 3rem;
 }
 
-/* Movie card */
 .movie-card {
   background: var(--bg-card);
   border-radius: 12px;
@@ -370,7 +364,6 @@ body {
   /* font-size: 0.9rem; */
 }
 
-/* Pagination */
 .pagination {
   display: flex;
   align-items: center;
@@ -410,7 +403,6 @@ body {
   gap: 0.5rem;
 }
 
-/* Loading and error states */
 .loading-container,
 .error-container {
   display: flex;
@@ -453,7 +445,6 @@ body {
   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
 }
 
-/* Movie details page */
 .movie-details-page {
   max-width: 1000px;
   margin: 0 auto;
@@ -609,7 +600,6 @@ body {
   color: var(--text-secondary);
 }
 
-/* Content tabs */
 .movie-content {
   background: var(--bg-card);
   border-radius: 12px;
@@ -684,7 +674,6 @@ body {
   color: var(--text-secondary);
 }
 
-/* Reviews */
 .reviews-content {
   display: flex;
   flex-direction: column;
@@ -858,7 +847,6 @@ body {
   transform: translateY(-2px);
 }
 
-/* Responsive design */
 @media (max-width: 768px) {
   .navbar-container {
     flex-direction: column;
